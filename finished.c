@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 
 typedef struct Students{
@@ -689,3 +690,4 @@ void search_course(Students st[], int numStudents, Courses course[], int numcour
   }
       
 }
+
