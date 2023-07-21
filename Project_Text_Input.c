@@ -72,20 +72,20 @@ int main() {
     // Array of structs to store the attributes of each task
     struct Task tasks[MAX_TASKS];
 
+    //Opening .txt file to read the input
     FILE*file;
     file=fopen("file.txt", "r");
 
     int i=0;
     
     char str[120];
- 
-    fscanf(file, "%s %s %s", str, str, str);
+
+    //Reading the file and storing each Computation time, deadline and period in the struct
     
-    while(!feof(file)){
-      
-        
-        fscanf(file, "%s %d %d %d", str, &tasks[i].computationTime, &tasks[i].deadline, &tasks[i].period);
-        i++;
+        fscanf(file, "%s %s %s", str, str, str);    
+        while(!feof(file)){      
+            fscanf(file, "%s %d %d %d", str, &tasks[i].computationTime, &tasks[i].deadline, &tasks[i].period);
+            i++;
     }
         numTasks = i;
         
