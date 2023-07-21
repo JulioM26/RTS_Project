@@ -1,0 +1,8 @@
+	Ci    Di    Pe
+Task 1  1     3     4
+Task 2  1     5     2
+Task 3  2     5     2
+Task 4  1     4     3
+Task 5  2     7     3
+
+
