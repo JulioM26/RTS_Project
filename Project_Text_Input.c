@@ -89,6 +89,11 @@ int main() {
     }
         numTasks = i;
         
+        if (numTasks <= 0 || numTasks > MAX_TASKS) {
+            printf("Invalid number of tasks. Please enter a value between 1 and %d.\n", MAX_TASKS);
+            return 1;
+        }
+        
         // Check feasibility using DMS and RMS algorithms
         int feasibleDMS = isFeasibleDMS(tasks, numTasks);
         int feasibleRMS = isFeasibleRMS(tasks, numTasks);
@@ -124,4 +129,3 @@ int main() {
 
     return 0;
 }
-
